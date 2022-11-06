@@ -1,0 +1,76 @@
+*{
+    box-sizing:border-box;
+}
+html,body{
+    height: 100%;
+}
+
+
+.main{
+    height: 100%;
+    display: grid;
+    grid-template-columns:1fr 1.5fr 1fr;
+    /* margin-left: 50px; */
+    
+}
+
+.sidebar1{
+    background-color: #e6f2ff;
+    
+  
+
+    
+}
+
+.sidebar1 >.text{
+    
+    padding: 3px 4px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-left: 4rem;
+
+    
+    
+}
+.sidebar1 >.text:hover{
+    background-color: grey;
+    border-radius: 12px;
+    width: fit-content;
+    transition: all 500ms ease-in-out;
+
+}
+ .icon{
+     margin-left: 3.9rem;
+      font-size: 27px;
+     margin-top: 20px;
+     color: 	#1DA1F2;
+ }
+ .icon:hover{
+     background-color:grey;
+     border-radius: 28px;
+     width: fit-content;
+     transition: all 500ms ease-in-out;
+
+ }
+
+.iconMark{
+    padding: 1px 1px;
+}
+
+.tweet-btn{
+    margin-top: 20px;
+    margin-left: 3.5rem;
+    color: white;
+    background-color: #1DA1F2;
+    border-radius: 8px;
+    padding:  3px 6px;
+    border: none;
+    width: 5rem;
+    height: 28px;
+    font-weight: bold;
+}
+
+.tweet-btn:hover{
+    background-color: lightgray;
+
+}

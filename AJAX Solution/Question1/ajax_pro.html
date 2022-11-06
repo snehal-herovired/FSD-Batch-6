@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Assignment</title></head>
+<body>
+
+<h1>The XMLHttpRequest Object</h1>
+
+<button type="button" onclick="loadDoc()">Restaurant Details</button>
+<br><br>
+<div id="restaurantDetails"></div>
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+    }
+  };
+  xhttp.open("GET", "test.xml", true);
+  xhttp.send();
+}
+function myFunction(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+  var table="<tr><th>RestaurantName</th><th>Address</th></tr>";
+  var x = xmlDoc.getElementsByTagName("CD");
+  for (i = 0; i <x.length; i++) { 
+
+    let listItem = document.createElement("li");
+    listItem.innerText = x[i].getElementsByTagName("restaurantName")[0].childNodes[0].nodeValue + x[i].getElementsByTagName("address")[0].childNodes[0].nodeValue;
+    if(x[i].getElementsByTagName("type")[0].childNodes[0].nodeValue == "sitdown"){
+            listItem.style.color = "green";
+        }else if(x[i].getElementsByTagName("type")[0].childNodes[0].nodeValue == "bar"){
+            listItem.style.color = "blue";
+        }
+    document.getElementById('restaurantDetails').appendChild(listItem);
+  }
+}
+</script>
+
+</body>
+</html>

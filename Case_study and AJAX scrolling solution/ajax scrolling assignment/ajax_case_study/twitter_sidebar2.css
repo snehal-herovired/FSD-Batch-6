@@ -1,0 +1,22 @@
+.Sidebar2{
+    background-color: #e6f2ff;
+}
+.right-inner-addon  {
+    /* position: absolute; */
+    margin-left: 0px;
+    padding: 10px 12px;
+}
+.form-control{
+    width: 25vw;
+    height: 4vh;
+}
+#demo {
+    height: 500px;
+    width:80%;
+    margin-top: 30px;
+    background-color: lightblue;
+    overflow-y: scroll;
+    position: relative;
+    top: 10%;
+    left: 10%;
+}

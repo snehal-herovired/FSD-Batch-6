@@ -1,0 +1,23 @@
+<CATALOG>
+<CD>
+<restaurantName>yellow chilli</restaurantName>
+<address>Bob Dylan</address>
+<lat>47.608940</lat>
+<lng>-122.340141</lng>
+<type>sitdown</type>
+</CD>
+<CD>
+<restaurantName>The Groot</restaurantName>
+<address>Bengaluru</address>
+<lat>133.50672</lat>
+<lng>33.45678</lng>
+<type>sitdown</type>
+</CD>
+<CD>
+<restaurantName>Cadbury Open House</restaurantName>
+<address>Dolly Delhi</address>
+<lat>22.34567</lat>
+<lng>123.09876</lng>
+<type>bar</type>
+</CD>
+</CATALOG>

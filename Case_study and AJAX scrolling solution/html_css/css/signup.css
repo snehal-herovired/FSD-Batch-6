@@ -1,0 +1,23 @@
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+*{
+    box-sizing: border-box;
+    
+}
+.signup{
+    height: 200px;
+    width: 350px;
+    background-color:lightblue;
+    position: relative;
+    top: 20%;
+    left: 35%;
+    padding:4px ;
+    text-align: center;
+}
+.signup>input{
+    width: 95%;
+    margin-bottom: 4px;
+}
