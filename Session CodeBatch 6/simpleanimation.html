@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of CSS3 skew() Method</title>
+<style>
+.element{
+    height: 250px;
+    width: 250px;
+    margin: auto;
+    background-color: blue;
+    animation-name: abc;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 2;
+    animation-direction:alternate;
+    animation-fill-mode:backwards;
+    animation-play-state: running;
+}
+@keyframes abc{
+    0%{
+    background-color: brown;
+    transform: scale(3);
+    }
+    50%{
+    background-color: aqua;
+    border-radius: 50%;
+    }
+    100%{
+        background-color: rgb(198, 119, 34);  
+        transform: scale(0.5);
+    }
+}
+</style>
+</head>
+<body>
+ <div class="element"  ></div>
+</body>
+</html>
