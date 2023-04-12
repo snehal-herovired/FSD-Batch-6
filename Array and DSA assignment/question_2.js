@@ -2,7 +2,7 @@
 // Sample_input :[1,2,4,3,2,4,2,5,7,2]
 // Sample_output :2 
 
-function highfrequent(arr, n) {
+function highFrequent(arr, n) {
     arr.sort();
 
     let max_count = 1,
@@ -28,4 +28,4 @@ function highfrequent(arr, n) {
   let arr = [1, 2, 4, 3, 2, 4, 2, 5, 7, 2];
   let n = arr.length;
 
-  console.log(highfrequent(arr, n));
+  console.log(highFrequent(arr, n));
